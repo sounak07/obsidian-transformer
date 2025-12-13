@@ -1,4 +1,3 @@
-# Path to your Obsidian vault
 vault_path: "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/reactivist's vault/engineering_brain_fork/Engineering Notes"
 
 # GitHub configuration
@@ -7,10 +6,8 @@ github:
   repo: "engineering-prep-hub"
   branch: "main"
 
-# Folder in vault where attachments/images are stored
 attachments_folder: "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/reactivist's vault/engineering_brain_fork/assets"
 
-# Local path to your cloned GitHub repo (where transformed files go)
 output_path: "~/Documents/Projects/backend-engineering"
 output_path_resources: "assets"
 

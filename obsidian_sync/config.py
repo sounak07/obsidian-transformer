@@ -1,5 +1,3 @@
-"""Configuration loader for obsidian-sync."""
-
 import os
 from pathlib import Path
 from dataclasses import dataclass
@@ -10,20 +8,17 @@ import yaml
 
 @dataclass
 class GitHubConfig:
-    """GitHub repository configuration."""
     username: str
     repo: str
     branch: str = "main"
     
     @property
     def raw_url_base(self) -> str:
-        """Get the base URL for raw.githubusercontent.com."""
         return f"https://raw.githubusercontent.com/{self.username}/{self.repo}/{self.branch}"
 
 
 @dataclass
 class Config:
-    """Main configuration for obsidian-sync."""
     vault_path: Path
     github: GitHubConfig
     attachments_folder: str
@@ -34,11 +29,9 @@ class Config:
     
     @classmethod
     def from_file(cls, config_path: Path) -> "Config":
-        """Load configuration from YAML file."""
         with open(config_path, "r") as f:
             data = yaml.safe_load(f)
         
-        # Expand ~ in paths
         vault_path = Path(os.path.expanduser(data["vault_path"]))
         output_path = Path(os.path.expanduser(data["output_path"]))
         output_path_resources = Path(os.path.expanduser(data["output_path_resources"]))
