@@ -6,9 +6,6 @@ dist/
 build/
 *.egg
 
-# Config with secrets
-config.yaml
-
 # Sync state
 .sync-hashes.json
 
