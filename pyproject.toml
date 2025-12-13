@@ -1,0 +1,19 @@
+[project]
+name = "obsidian-github-sync"
+version = "0.1.0"
+description = "Sync Obsidian vault to GitHub with wiki-link transformation"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.0",
+    "gitpython>=3.1",
+    "pyyaml>=6.0",
+    "pathspec>=0.11",
+]
+
+[project.scripts]
+obsidian-sync = "obsidian_sync.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Config with secrets
+config.yaml
+
+# Sync state
+.sync-hashes.json
+
+# Output folder (your cloned GitHub repo)
+output/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+obsidian-transformer/
