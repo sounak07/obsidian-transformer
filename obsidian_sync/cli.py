@@ -63,8 +63,7 @@ def check(param):
 def status():
     """Show current sync status."""
     try:
-        config_path = find_config()
-        cfg = Config.from_file(config_path)
+        cfg = Config.from_file("config.yaml")
         
         click.echo(f"📂 Vault: {cfg.vault_path}")
         click.echo(f"   Exists: {'✅' if cfg.vault_path.exists() else '❌'}")
