@@ -55,14 +55,14 @@ class SyncEngine:
     
     def _copy_image(self, image_name: str) -> bool:
         attachments = Path(os.path.expanduser(self.config.attachments_folder))
-        
         source = attachments / image_name
         if not source.exists():
-            matches = list(attachments.rglob("*"))
-            if matches:
-                source = matches[0]
-            else:
+            matches = [f for f in attachments.rglob("*") if f.name == image_name]
+            print( image_name ,matches)
+            if not matches:
+                print(f"Image not found: {image_name}")
                 return False
+            source = matches[0]
         
         dest_dir = self.config.output_path / self.config.output_path_resources
         dest_dir.mkdir(parents=True, exist_ok=True)
