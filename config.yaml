@@ -3,7 +3,7 @@ vault_path: "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/reactivist'
 # GitHub configuration
 github:
   username: "sounak07"
-  repo: "engineering-prep-hub"
+  repo: "backend-engineering"
   branch: "main"
 
 attachments_folder: "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/reactivist's vault/engineering_brain_fork/assets"
