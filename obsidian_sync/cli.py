@@ -2,6 +2,7 @@ from pathlib import Path
 
 import click
 
+from . import __version__
 from .config import Config
 from .sync import SyncEngine
 from .git_handler import GitHandler
@@ -30,7 +31,7 @@ def get_config() -> Config:
 
 
 @click.group()
-@click.version_option()
+@click.version_option(version=__version__, prog_name="ob-sync")
 def main():
     pass
 

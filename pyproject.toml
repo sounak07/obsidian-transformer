@@ -1,6 +1,6 @@
 [project]
 name = "ob-sync"
-version = "0.1.1"
+version = "0.1.2"
 description = "Sync Obsidian vault to GitHub with wiki-link transformation"
 readme = "README.md"
 requires-python = ">=3.9"
