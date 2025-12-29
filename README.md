@@ -1,5 +1,9 @@
 # ob-sync
 
+[![PyPI version](https://badge.fury.io/py/ob-sync.svg)](https://badge.fury.io/py/ob-sync)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A CLI tool to sync your Obsidian vault to a GitHub repository with automatic wiki-link transformation.
 
 ## Features
@@ -11,7 +15,7 @@ A CLI tool to sync your Obsidian vault to a GitHub repository with automatic wik
 
 ## Installation
 
-### From PyPI (coming soon)
+### From PyPI
 ```bash
 pip install ob-sync
 ```
